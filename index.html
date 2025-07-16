@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Ruleta de Tugha</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎯 La Ruleta de Tugha</h1>
+  <div id="userForm">
+    <input type="text" id="usernameInput" placeholder="Tu usuario de Roblox" />
+    <button onclick="addUser()">Unirse</button>
+  </div>
+  <div id="adminPanel" style="display:none">
+    <button onclick="spinWheel()">🎰 Girar ruleta</button>
+    <button onclick="resetWheel()">🔄 Resetear</button>
+  </div>
+  <canvas id="wheelCanvas" width="500" height="500"></canvas>
+  <div id="winner"></div>
+  <script src="script.js"></script>
+</body>
+</html>
